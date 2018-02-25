@@ -1304,8 +1304,15 @@
                 var val = $(e.target).val().trim(),
                     parsedDate = val ? parseInputDate(val) : null;
                 setValue(parsedDate);
-                e.stopImmediatePropagation();
-                return false;
+
+                // THIS CODE IS ORIGINAL, WHICH CAUSED KENDO DATABINDING NOT WORKING
+                /*e.stopImmediatePropagation();
+                 return false;*/
+
+                if (e.originalEvent != null) {
+                    e.stopImmediatePropagation();
+                    return false;
+                }
             },
 
             attachDatePickerElementEvents = function () {

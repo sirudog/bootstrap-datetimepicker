@@ -9,7 +9,7 @@
         "moment": "2.29.1",
         "moment-timezone" : "0.5.31",
         "bootstrap": "3.4.1",
-        "jquery": "3.5.1"
+        "jquery": "2.2.4"
     },
     "description": "A date/time picker component designed to work with Bootstrap 3 and Momentjs. For usage, installation and demos see Project Site on GitHub",
     "devDependencies": {
